@@ -18,4 +18,11 @@ def display(data):
     for name, locker in data:
         print("Name: {0}, Locker: {1}".format(name,locker))
         
-------------------------------------Above is the python code for accessing the database------------------------------------
+#------------------------------------Above is the python code for accessing the database------------------------------------#
+
+from flask import Flask
+app = Flask(__locker_searcher__)
+
+@app.route("/")
+def hello():
+    return "Hello World!"
