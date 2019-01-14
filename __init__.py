@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('locker.db')
+conn = sqlite3.connect('locker_data.db')
 
 c = conn.cursor()
 
@@ -21,7 +21,7 @@ def display(data):
 #------------------------------------Above is the python code for accessing the database------------------------------------#
 
 from flask import Flask
-app = Flask(__locker_searcher__)
+app = Flask(__name__)
 
 @app.route("/")
 def hello():
