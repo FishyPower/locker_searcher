@@ -17,3 +17,5 @@ def search():
 def display(data):
     for name, locker in data:
         print("Name: {0}, Locker: {1}".format(name,locker))
+        
+------------------------------------Above is the python code for accessing the database------------------------------------
