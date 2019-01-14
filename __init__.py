@@ -25,4 +25,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    return render_template("main_page.html")
